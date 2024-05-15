@@ -11,6 +11,8 @@
     <h1>Variáveis e constantes</h1>
     <hr>
 
+    <h2>Declaração e saída de dados usando <code>echo</code></h2>
+
 <?php
 // Variáveis
 $curso = "Programador Web";
@@ -33,7 +35,18 @@ const EMPRESA = "ABC Tecnologia"; // nova, moderna
 // Tiago trabalha na empresa ABC Tecnologia.
 echo "<p>".AUTOR." trabalha na empresa ".EMPRESA."</p>";
 ?>
-    
+
+    <hr>
+
+    <h2>Saída de dados simplificada/direta</h2>
+
+    <!-- Estamos no Programador Web em 2024. -->
+    <p>Estamos no <?=$curso?> em <?=$ano?>.</p>
+
+    <!-- Tiago trabalha na empresa ABC Tecnologia -->
+    <p> <?=AUTOR?> trabalha na empresa <?=EMPRESA?></p>
+
+
 </div>
 
 
