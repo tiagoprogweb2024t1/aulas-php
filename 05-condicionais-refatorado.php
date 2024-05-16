@@ -33,14 +33,19 @@ $qtdCritica = 2;
 
 <?php
 if( $qtdEmEstoque < $qtdCritica ){
-    echo "<p class=\"alert alert-warning\">É necessário repor</p>";
+?>
+    <p class="alert alert-warning">É necessário repor</p>
 
+    <?php
     if( $qtdEmEstoque == 0 ){
-        echo "<p class=\"alert alert-danger\">AGORA!!!</p>";
+    ?>
+        <p class="alert alert-danger">AGORA!!!</p>
+    <?php
     }
-
 } else {
-    echo "<p class=\"alert alert-success\">Estoque normal</p>";
+    ?>
+    <p class="alert alert-success">Estoque normal</p>
+<?php
 }
 ?>
     <hr>
