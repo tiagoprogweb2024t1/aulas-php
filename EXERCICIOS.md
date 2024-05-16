@@ -1,5 +1,17 @@
 # Exercícios de PHP
 
+## 16/05/2024
+
+### Exercício 3
+
+- Crie um array contendo o nome dos **12 meses** do ano.
+
+- Monte uma **lista ordenada** exibindo o nome de cada mês em um item.
+
+**DESAFIO**: formate a listade uma forma que os meses apareçam com cores alternadas. Exemplo: janeiro/março em azul, fevereiro/abril em vermelho etc.
+
+---
+
 ## 15/05/2024
 
 ### Exercício 2
