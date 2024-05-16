@@ -16,7 +16,9 @@
 <?php
 $numero = 50;
 if($numero < 100){
-    echo "<p>Condição é verdadeira/true!</p>";
+?>
+    <p>Condição é verdadeira/true!</p>
+<?php
 }
 ?>
     <hr>
