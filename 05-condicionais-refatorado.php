@@ -31,23 +31,16 @@ $qtdCritica = 2;
     <h3>Produto: <?=$produto?></h3>
     <h3>Estoque: <?=$qtdEmEstoque?></h3>
 
-<?php
-if( $qtdEmEstoque < $qtdCritica ){
-?>
+<?php if( $qtdEmEstoque < $qtdCritica ){?>
     <p class="alert alert-warning">É necessário repor</p>
 
-    <?php
-    if( $qtdEmEstoque == 0 ){
-    ?>
+    <?php if( $qtdEmEstoque == 0 ){ ?>
         <p class="alert alert-danger">AGORA!!!</p>
-    <?php
-    }
-} else {
+    <?php }
+    } else {
     ?>
     <p class="alert alert-success">Estoque normal</p>
-<?php
-}
-?>
+<?php } ?>
     <hr>
 
     <h2>Encadeada (usa <code>if, else, elseif</code>)</h2>
