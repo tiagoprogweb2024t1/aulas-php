@@ -26,7 +26,7 @@ if($numero < 100){
 <?php
 /* Controle de Estoque */
 $produto = "Ultrabook";
-$qtdEmEstoque = 10; // o que temos no momento
+$qtdEmEstoque = 0; // o que temos no momento
 $qtdCritica = 2; // mínimo necessário
 ?>
     <h3>Produto: <?=$produto?></h3>
@@ -36,12 +36,18 @@ $qtdCritica = 2; // mínimo necessário
 /* Se a quantidade em estoque for abaixo
 da quantidade crítica, o sistema deve avisar
 e pedir pra repor. */
-if(  ){
+if( $qtdEmEstoque < $qtdCritica ){
+    echo "<p class=\"alert alert-warning\">É necessário repor</p>";
+
+    /* Condicional ANINHADA */
+    if( $qtdEmEstoque == 0 ){
+        echo "<p class=\"alert alert-danger\">AGORA!!!</p>";
+    }
 
 } else {
     /* Caso contrário, simplesmente 
     falar que o estoque está normal. */
-
+    echo "<p class=\"alert alert-success\">Estoque normal</p>";
 }
 ?>
 
