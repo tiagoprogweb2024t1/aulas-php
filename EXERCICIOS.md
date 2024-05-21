@@ -8,7 +8,7 @@
 
 - Monte uma **lista ordenada** exibindo o nome de cada mês em um item.
 
-**DESAFIO**: formate a listade uma forma que os meses apareçam com cores alternadas. Exemplo: janeiro/março em azul, fevereiro/abril em vermelho etc.
+**DESAFIO**: formate a lista de uma forma que os meses apareçam com cores alternadas. Exemplo: janeiro/março em azul, fevereiro/abril em vermelho etc.
 
 ---
 
