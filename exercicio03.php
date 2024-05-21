@@ -20,6 +20,9 @@ $mesesDoAno = [
 <ol>
 <?php 
 for( $i = 0; $i < count($mesesDoAno); $i++ ){ 
+    /* Neste caso, avaliamos o resto da divisão por 2.
+    Quando é zero (ou seja, número par), atribuimos a cor vermelha. Quando é diferente de zero (ou seja, ímpar),
+    atribumos a cor azul. */
     $cor = $i % 2 == 0 ? "red" : "blue";
 ?>
     <li style="color: <?=$cor?>"> <?=$mesesDoAno[$i]?> </li>
