@@ -6,17 +6,6 @@
 <title>Exercício 03</title>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
-<style>
-li:nth-child(even) { /* pares */
-    color: red;
-}
-
-li:nth-child(odd){  /* ímpares */
-    color: blue;
-}
-
-</style>
-
 </head>
 <body>
 <div class="container">
@@ -29,8 +18,11 @@ $mesesDoAno = [
 ];
 ?>
 <ol>
-<?php foreach( $mesesDoAno as $mes ){ ?>
-    <li> <?=$mes?> </li>
+<?php 
+for( $i = 0; $i < count($mesesDoAno); $i++ ){ 
+    $cor = $i % 2 == 0 ? "red" : "blue";
+?>
+    <li style="color: <?=$cor?>"> <?=$mesesDoAno[$i]?> </li>
 <?php } ?>
 </ol>
 
