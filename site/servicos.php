@@ -1,4 +1,7 @@
-<?php include "cabecalho.php"; ?>
+<?php 
+$titulo = "Serviços - ";
+include "cabecalho.php"; 
+?>
             <h2>Serviços prestados</h2>
             <ol>
                 <li>Criação</li>
