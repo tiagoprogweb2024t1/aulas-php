@@ -1,5 +1,40 @@
 # Exercícios de PHP
 
+## 25/05/2024
+
+### Exercício 4
+
+#### Etapa 01
+
+Abra o arquivo **exercicio04-formulario.php** e analise sua estrutura.
+
+Veja que existe um formulário com campos para para **simulação de cadastro** de produtos:
+
+- Nome do produto - `input text`
+- Fabricante - `select/option`
+- Preço - `input number`
+- Descrição - `textarea`
+- Botão de enviar - `input submit`
+
+##### DESAFIO FABRICANTE
+
+- Crie um array contendo uma lista com os nomes de 4 fabricantes.
+- Usando o loop `foreach`, faça os `options` do `select` serem carregados a partir dos dados do array que você criou.
+
+#### Etapa 02
+
+Abra o arquivo **exercicio04-processamento.php** e faça a programação de processamento do formulário considerando o envio/recebimento via POST.
+
+Mostre os dados recebidos usando tags HTML.
+
+##### DESAFIO PREÇO
+
+Faça o preço aparecer formatado em Reais.
+
+Exemplo: se o preço digitado no formulário for **4500.75**, deverá aparecer no HTML como **R$ 4.500,75**.
+
+---
+
 ## 16/05/2024
 
 ### Exercício 3
