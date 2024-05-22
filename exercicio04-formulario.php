@@ -8,7 +8,8 @@
 <body>
     <h1>Exercício 04 (formulário)</h1>
     <hr>
-    <form autocomplete="off" action="" method="">
+    <form autocomplete="off" 
+    action="exercicio04-processamento.php" method="post">
         <p>
             <label for="produto">Produto:</label>
             <input required type="text" name="produto" id="produto">
@@ -22,7 +23,14 @@
 				
 				<!-- Faça aqui a programação necessária para obter os dados de um array (criado por você)
 				e colocá-los (cada um) dentro de uma tag <option>. -->	
-
+                <?php
+                $fabricantes = ["Dell", "Asus", "LG", "HP"];
+                foreach($fabricantes as $fabricante){
+                ?>
+                    <option><?=$fabricante?></option>
+                <?php
+                }
+                ?>
 			</select>
 		</p>
 
